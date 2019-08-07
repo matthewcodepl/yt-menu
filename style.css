@@ -1,0 +1,108 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 16px;
+}
+
+.navigation {
+  width: 100%;
+  background-color: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  color: #fff;
+}
+
+.navigation .brand {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.navigation .burger {
+  display: none;
+}
+
+.navigation .burger span {
+  display: block;
+  background: blue;
+  margin: 7px 0;
+  height: 2.5px;
+  width: 30px;
+}
+
+.navigation .menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation .menu .list-item {
+  margin-left: 30px;
+}
+
+.navigation .menu .list-item a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.navigation .menu .list-item a:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    position: relative;
+    max-width: 100%;
+  }
+  .navigation .burger {
+    display: block;
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+  .navigation .burger:target {
+    height: auto;
+    overflow: auto;
+  }
+  .navigation .menu {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #606061;
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height .4s all;
+    transition: max-height .4s all;
+  }
+  .navigation .menu .list-item {
+    padding: 20px 0;
+    text-align: center;
+    margin: 0%;
+  }
+  .navigation .menu .list-item a {
+    display: block;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
