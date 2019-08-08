@@ -1,6 +1,7 @@
-const bar = document.querySelector("#burger");
+const bar = document.getElementById("burger");
 const menu = document.querySelector("#nav");
 
 bar.addEventListener("click", () => {
-  menu.classList.toggle("rwd-menu");
+  console.log("klik");
+  menu.classList.toggle("mobile-nav");
 });
